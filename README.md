@@ -10,7 +10,7 @@ Odin-Sign-up-Form is a project created as part of The Odin Project's Intermediat
 - Incorporates an SVG graphic created in Inkscape to enhance visual appeal.
 - Implements flexbox for flexible and responsive layout design.
 - Provides error messages when passwords do not match to improve user experience.
-- Uses the `:focus` pseudo-class for styling input fields when they are in focus.
+- Uses the `:focus` and `valid` pseudo-classes for styling input fields.
 
 ## Usage
 
