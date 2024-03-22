@@ -14,7 +14,7 @@ Odin-Sign-up-Form is a project created as part of The Odin Project's Intermediat
 
 ## Usage
 
-To see a live demonstration of the sign-up form, simply visit the following link: [Odin-Sign-Up-Form Demo](https://ogmui.github.io/Odin-Sign-Up-Form/)
+To see a live demonstration of the sign-up form, simply visit the following link: [Odin-Sign-Up-Form Demo](https://ogmui.github.io/Odin-Sign-up-Form/)
 
 ## Acknowledgments
 
