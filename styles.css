@@ -19,6 +19,7 @@
     --btn-color: #2885DB;
     --logo-orange: #FF6600;
     --error-red: #620000;
+    --valid: #1EAF6E;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
@@ -156,6 +157,13 @@ input:focus {
     outline: none;
     
 }
+input:valid {
+    border-color: var(--valid) ;
+}
+
+/* input:invalid {
+    border-color: var(--error-red);
+} */
 
 input.error {
     border: 1.5px solid var(--error-red);
