@@ -152,13 +152,13 @@ legend {
 }
 input:focus {
     box-shadow: 0px 3px 3px black;
-    border: 2px solid var(--logo-orange);
+    border: 1.5px solid var(--logo-orange);
     outline: none;
     
 }
 
 input.error {
-    border: 1px solid --error-red;
+    border: 1.5px solid var(--error-red);
     
 }
 
