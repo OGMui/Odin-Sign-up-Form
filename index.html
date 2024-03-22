@@ -50,14 +50,19 @@
                             <div class="input"> 
                                 <label for="password">Password</label>
                                 <input type="password" name="password" id="password">
+                                <span id="password-match-error" style="font-size: .8em; margin: 3px 0px; padding: 0px 0px; color: #620000; display:none ;">* Passwords do not match</span>
                             </div> 
                             <div class="input">
                                 <label for="password_confirm">Confirm Password</label>
                                 <input type="password" name="password_confirm" id="password_confirm">
+                                
+                                
+
                             </div>
                         </div>
                         </div>
-                        <button type="submit">Create Account</button>
+                        <button id="submit-btn"
+                         type="submit">Create Account</button>
                         <span>
                             Already have an account? <a href="#">Log in</a>
                         </span>
@@ -69,6 +74,28 @@
         </div>
     </div>
     
-  
+  <script>
+    const passwordInput = document.getElementById("password");
+    const passwordConfirmInput = document.getElementById("password_confirm");
+    const submitBtn = document.getElementById("submit-btn"); 
+    const passwordMatchError = document.getElementById("password-match-error");
+
+    console.log(passwordInput.value)
+    
+    submitBtn.addEventListener('click', () => {
+        
+        if (passwordInput.value !== passwordConfirmInput.value){
+        passwordConfirmInput.style.border = "1px solid #620000";
+        passwordInput.style.border = "1px solid #620000"
+        event.preventDefault(); // Prevent form submission
+        passwordMatchError.style.display = "block";
+        passwordInput.style.margin = "0px"
+
+        console.log("passwords do not match")}
+    })
+
+    
+
+  </script>
 </body>
 </html>
