@@ -17,7 +17,9 @@
     color: var(--font-color);
     --main-background: #101C28;
     --btn-color: #2885DB;
-    font-family: sans-serif ;
+    --logo-orange: #FF6600;
+    --error-red: #620000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
 body {
@@ -150,13 +152,13 @@ legend {
 }
 input:focus {
     box-shadow: 0px 3px 3px black;
-    border: 2px solid #FF6600;
+    border: 2px solid --logo-orange;
     outline: none;
     
 }
 
 input.error {
-    border: 1px solid #620000;
+    border: 1px solid --error-red;
     
 }
 
@@ -170,7 +172,7 @@ input.error {
  font-size: .8em;
  margin: 2px 0px;
  padding: 0px 0px;
- color: #620000;
+ color: var(--error-red);
  display: inline;
 
 } 
@@ -182,12 +184,6 @@ label {
     font-size: 0.8em;
     width: calc(100% / 2 -20px);
 }
-
-/* input {
-    width: calc(100% /2 - 20px);
-    padding: 0px;
-    margin: 20px;
-} */
 
 button {
     background-color: var(--btn-color);
