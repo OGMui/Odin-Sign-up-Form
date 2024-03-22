@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+.background-image {
+    background-image: url(images/aldebaran-s-qtRF_RxCAo0-unsplash.jpg);
+    background-size: cover;
+    background-color: #000;
+
+    height: 100vh;
+}
+
+#logo-container {
+    background-color: white;
+    opacity: .5;
+    height: 40px;
+    width: 120px;
+}
