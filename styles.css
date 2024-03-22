@@ -144,6 +144,7 @@ legend {
     height: 25px;
     border-radius: 3px;
     margin-bottom: 20px;
+    width: 100%;
     background-color: rgba(255 , 255, 255, .4);
     border: 1px solid #101C28;
 }
