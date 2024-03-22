@@ -50,7 +50,7 @@
                             <div class="input"> 
                                 <label for="password">Password</label>
                                 <input type="password" name="password" id="password">
-                                <span id="password-match-error" style="font-size: .8em; margin: 3px 0px; padding: 0px 0px; color: #620000; display:none ;">* Passwords do not match</span>
+                                <div id="password-match-error"></div>
                             </div> 
                             <div class="input">
                                 <label for="password_confirm">Confirm Password</label>
@@ -85,14 +85,19 @@
     submitBtn.addEventListener('click', () => {
         
         if (passwordInput.value !== passwordConfirmInput.value){
-        passwordConfirmInput.style.border = "1px solid #620000";
-        passwordInput.style.border = "1px solid #620000"
         event.preventDefault(); // Prevent form submission
-        passwordMatchError.style.display = "block";
-        passwordInput.style.margin = "0px"
+        passwordConfirmInput.classList.add("error");
+        passwordInput.classList.add("error");
+        passwordMatchError.classList.add("error");
+        passwordMatchError.innerText = "* Passwords do not match";
 
-        console.log("passwords do not match")}
-    })
+        console.log("passwords do not match")
+    }
+    else {
+        passwordConfirmInput.style.border = ""; 
+        passwordInput.style.border = ""; 
+        passwordMatchError.style.display = "none"; 
+    }});
 
     
 

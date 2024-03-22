@@ -150,6 +150,25 @@ legend {
     border: 1px solid #101C28;
 }
 
+input.error {
+    border: 1px solid #620000;
+    
+}
+
+#password.error {
+    margin-bottom: 0px;
+}
+
+
+#password-match-error.error  {
+ content: "* Passwords do not match";
+ font-size: .8em;
+ margin: 2px 0px;
+ padding: 0px 0px;
+ color: #620000;
+ display: inline;
+
+} 
 
 
 label {
